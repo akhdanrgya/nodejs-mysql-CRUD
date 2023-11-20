@@ -7,7 +7,6 @@ const port = 5000
 const productRoute = require('./routes/productRoute')
 
 app.use(express.json())
-// app.use(express.static("public"))
 
 sequelize.sync().then(() => {
     console.log('Database synced');
